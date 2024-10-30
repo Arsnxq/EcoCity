@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+</head>
+<body>
+
+        <header class="header open">
+            <div class="container">
+               <div class="headerWrapper">
+                    <button class="headerBurger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <img src="{{ url_for('static', filename='images/logogogo.png') }}" alt="Logo" class="logo">
+                <nav class="headerNav">
+                    <ul class="headerList">
+                        <li><a href="/home" class="mainPage">Главная</a></li>
+                        <li><a href="/create_article" class="Create">Создать статью</a></li>
+                        <li><a href="/articles" class="States">Статьи</a></li>
+                    </ul>
+                </nav>
+               </div>
+            </div>
+       </header>
+</body>
+</html>

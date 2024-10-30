@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Город Будущего{% endblock %} 
+
+{% block content %}
+    <section class="welcomePage">
+        <div class="container">
+            <div class="welcomeWrapper">
+                <img src="{{ url_for('static', filename='images/welcomeImage.png') }}" alt="Tree" class="welcomeImage">
+                <div class="welcomeContent">
+                    <h1 class="welcomeTitle">Стань<span> волонтером </span>и защити свой город!</h1>
+                    <p class="welcomeSubtitle">Прими участие и внеси свой вклад в дальнейшее развитие твоего города!</p>
+                    <button class="welcomeBtn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infoPage">
+        <div class="container">
+            <div class="infoWrapper">
+                <h2 class="infoTitle">Чем мы занимаемся?</h2>
+                <p class="infoSubtitle">В основном мы собираем команды для общественных работ с помощью нашего веб-сайта. Каждый может помочь городу посадкой деревьев, уборкой мусора и т.д. Наша цель сделать наш город как можно зеленее и чище! И запомните первый шаг к прекрасному городу начинается именно с вас!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="team">
+        <div class="container">
+            <div class="frontDev">
+                <img src="{{ url_for('static', filename='images/frontendDev.jpg') }}" alt="Frontend Developer" >
+                <div class="memberInfo">
+                    <h2 class="memberName">Аскарбеков Арсен</h2>
+                    <p class="memberDesc">Капитан и Front-end разработчик команды</p>
+                </div>
+            </div>
+            <div class="backDev">
+            <img src="{{ url_for('static', filename='images/backendDev.jpg') }}" alt="Backend Developer" >
+                <div class="memberInfo">
+                    <h2 class="memberName">Султаналиев Амангелди</h2>
+                    <p class="memberDesc">Back-end разработчик команды</p>
+                </div>
+            </div>
+            <div class="teamSpeaker">
+                <img src="{{ url_for('static', filename='images/Speaker.jpg') }}" alt="Speaker" >
+                <div class="memberInfo">
+                    <h2 class="memberName">Крунов Артём</h2>
+                    <p class="memberDesc">Спикер команды</p>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerWrapper">
+                <div class="footerLogoPart">
+                    <img src="{{ url_for('static', filename='images/logogogo.png') }}" alt="Logo" class="footerLogo">
+                    <h2 class="footerNumber">+996 (706) 94-61-11</h2>
+                    <p class="numberSumtitle">Команда Ctrl+C Ctrl+V</p>
+                </div>
+                <nav class="footerNav">
+                    <div class="footerReproduction">
+                        <ul class="footerList">
+                            <h2 class="footerTitle">Волонтерство</h2>
+                            <li><a id="footerFrance" href="#!">Главная</a></li>
+                            <li><a id="footerGermany" href="#!">Создать статью</a></li>
+                            <li><a id="footerEngland" href="#!">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerNew">
+                        <ul class="footerList">
+                            <h2 class="footerTitle">Новинки</h2>
+                            <li><a href="#!">2024</a></li>
+                            <li><a href="#!">2023</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerAbout">
+                        <ul class="footerList">
+                            <h2 class="footerTitle">О нас</h2>
+                            <li><a href="#!">Программисты</a></li>
+                            <li><a href="#!">Тестировщики</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

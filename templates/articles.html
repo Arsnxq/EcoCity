@@ -1,0 +1,23 @@
+{% extends "main.html" %} 
+
+{% block title %}
+Список статей
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Список статей</h1>
+    <a href="{{ url_for('create_article') }}" class="btn btn-primary">Создать статью</a>
+    <ul class="list-group mt-3">
+        {% for article in articles %}
+        <li class="list-group-item">
+            <h5>{{ article.title }}</h5>
+            <p>{{ article.content }}</p>
+            <form method="POST" action="{{ url_for('delete_article', article_id=article.id) }}">
+                <button type="submit" class="btn btn-danger">Удалить</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,131 @@
+
+
+/** Шапка сайта  */
+
+.logo{
+    margin-bottom: 25px;
+    max-width: 400px;
+    max-height: 100px;
+}
+
+
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.headerList{
+    display: flex;
+    gap: 35px;
+    transition: 250ms;
+}
+
+.mainPage{
+    transition: 250ms;
+}
+
+.mainPage:hover{
+    color: green;
+}
+
+.Create{
+    transition: 250ms;
+}
+
+.Create:hover{
+    color: green;
+}
+
+.States{
+    transition: 250ms;
+}
+
+.States:hover{
+    color: green;
+}
+
+.headerBurger{
+    z-index: 11;
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #D4E8D9;
+}
+
+.headerBurger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 5px;
+    background-color: black;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.headerBurger span:first-child {
+    transform: translateY(-10px);
+}
+
+.headerBurger span:last-child {
+    transform: translateY(10px);
+}
+
+.header.open .headerBurger span:first-child{
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .headerBurger span:nth-child(2){
+    opacity: 0;
+}
+
+.header.open .headerBurger span:last-child{
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+/** Адаптивка  */
+
+@media(max-width: 400px){
+    .container{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .header.open .headerNav{
+        transform: translateX(100%);
+    }
+
+    .headerBurger{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .headerNav{
+        position: absolute;
+        left: -480px;
+        top: 0;
+        width: 400px;
+        background-color: #D4E8D9;
+        padding: 70px 20px 20px 20px;
+        transition: transform .5s;
+        z-index: 10;
+    }
+
+    .headerList{
+        display: block;
+    }
+
+    .headerList a {
+        display: block;
+        font-size: 24px;
+        padding: 50px 0;
+    }
+
+    .logo{
+        margin-left: 50px;
+    }
+
+}

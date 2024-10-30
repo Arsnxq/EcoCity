@@ -1,0 +1,60 @@
+
+.stateList{
+    background-image: url(../images/createPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.stateTitle{
+    font-size: 40px;
+    color: #fff;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.articleCard {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.articleCard h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.articleCard .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.articleCard .content {
+    font-size: 1em;
+    color: #444;
+    margin-top: 10px;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}

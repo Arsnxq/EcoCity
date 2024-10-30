@@ -1,0 +1,49 @@
+.states{
+    padding: 30px;
+    background-image: url(../images/createPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.stateTitle{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.statesWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.content{
+    padding: 70px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.stateBtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+}
+
+.titleLabel{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contentLabel{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Статьи{% endblock %}
+
+{% block content %}
+<section class="states">
+    <div class="container">
+        <h1 class="stateTitle">Добавление статьи</h1>
+        <form method="POST" action="{{ url_for('create_article') }}">
+            <div class="statesWrapper">
+                <label class="titleLabel" for="title">Заголовок</label>
+                <input type="text" name="title" class="title" required>
+
+                <label class="contentLabel" for="content">Содержание</label>
+                <textarea name="content" class="content" required></textarea>
+
+                <button type="submit" class="stateBtn">Добавить статью</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
